@@ -1,7 +1,7 @@
 module "solution" {
-  source  = "aztfmod/caf/azurerm"
-  version = "5.7.3"
-  # source = "git::https://github.com/aztfmod/terraform-azurerm-caf.git?ref=main"
+  #source  = "aztfmod/caf/azurerm"
+  #version = "5.7.3"
+  source = "git::https://github.com/leethanh2112/terraform-azurerm-caf.git?ref=feature/backup_policy_vm_workload"
 
   providers = {
     azurerm.vhub = azurerm.vhub
@@ -60,6 +60,7 @@ module "solution" {
   var_folder_path                       = var.var_folder_path
   webapp                                = local.webapp
   maps                                  = local.maps
+  backup_policy_vm_workload             = local.backup_policy_vm_workload
 
   diagnostics = {
     diagnostic_event_hub_namespaces = try(local.diagnostics.diagnostic_event_hub_namespaces, var.diagnostic_event_hub_namespaces)
