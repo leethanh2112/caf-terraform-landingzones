@@ -2,7 +2,7 @@ module "solution" {
   #source  = "aztfmod/caf/azurerm"
   #version = "5.7.6"
   #source = "git::https://github.com/leethanh2112/terraform-azurerm-caf.git?ref=main"
-  source = "git::ssh://git@ssh.dev.azure.com:v3/petronasvsts/azure-terraform-sandpit-caf-configuration/terraform-azurerm-caf?ref=feature/feature/backup_policy_vm_workload"
+  source = "git::ssh://git@ssh.dev.azure.com/petronasvsts/azure-terraform-sandpit-caf-configuration/terraform-azurerm-caf?ref=feature/feature/backup_policy_vm_workload"
   providers = {
     azurerm.vhub = azurerm.vhub
   }
