@@ -1,7 +1,8 @@
 module "solution" {
   #source  = "aztfmod/caf/azurerm"
   #version = "5.7.6"
-  source = "git::https://github.com/leethanh2112/terraform-azurerm-caf.git?ref=main"
+  #source = "git::https://github.com/leethanh2112/terraform-azurerm-caf.git?ref=main"
+  source = "git://azure-terraform-sandpit-caf-configuration/aws-iac-tf-modules
 
   providers = {
     azurerm.vhub = azurerm.vhub
